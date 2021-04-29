@@ -1,0 +1,22 @@
+In order to easily access different environments we can add aliases for kubectl and stern.
+ALIAS         SUPCTL ENV    CLUSTER       NAMESPACE
+kb            dev           minikube      default
+kubesand      staging       hive          default
+kubeprep      pre-prod      keg           pre-prod
+kubekeg       keg           keg           default
+kubeprod      production    tavern        default
+kubeci        ci            taproom       ci
+kubeds        ds            taproom       datascience
+kubetap       tap           taproom       default
+kubeloadtest  loadtest      loadtest      loadtest
+
+ALIAS         SUPCTL ENV    CLUSTER       NAMESPACE
+sternlocal    dev           minikube      default
+sternsand     staging       hive          default
+sternprep     pre-prod      keg           pre-prod
+sternkeg      keg           keg           default
+sternprod     production    tavern        default
+sternci       ci            taproom       ci
+sternds       ds            taproom       datascience
+sterntap      tap           taproom       default
+sternloadtest loadtest      loadtest      loadtest
