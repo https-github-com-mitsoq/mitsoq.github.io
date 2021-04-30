@@ -10,8 +10,12 @@
             <p class="subtitle">{{description}}</p>
             <span :title="message" class="footnote">{{footnote}}</span>
             <div class="greet">
-              <p>{{msg}}</p>
+              <p>{{updateMsg(msg)}} </p>
               <input v-model="msg" type="text"/>
+
+              <br/><br/>
+              <div id="todaysDate"></div><br/>
+              {{now}}
             </div>
         </div>
 
@@ -40,6 +44,8 @@
               </li>
             </ul>
         </div>
+
+
 
         <!-- development version, includes helpful console warnings -->
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>

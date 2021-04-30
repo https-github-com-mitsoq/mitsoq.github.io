@@ -8,11 +8,21 @@ var app = new Vue({
     description: 'This product website will show you the list of available shoes.',
     footnote: 'Shoes are great for our feet',
     message: 'You loaded this page on ' + new Date().toLocaleString(),
-    msg: 'Type here'
+    msg: 'Type here',
+    time: new Date()
   },
   computed: {
     title() {
       return  this.brand + ' ' + this.product;
+    },
+    now() {
+      return this.time.toLocaleTimeString();
+    }
+  },
+  methods: {
+    updateMsg(val) {
+      this.msg = val
+      return this.msg
     }
   }
 });
@@ -74,3 +84,11 @@ let product = new Vue({
     }
   }
 });
+
+setInterval(function() {
+  let now = new Date();
+  let str = now.toLocaleTimeString();
+  document.getElementById("todaysDate").innerHTML = str;
+}, 1000);
+
+
