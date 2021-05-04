@@ -1,54 +1,28 @@
 <!DOCTYPE html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Product App</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
-    <body>
-        <div id="app" class="intro">
-            <h1 class="heading">{{title}}</h1>
-            <p class="subtitle">{{description}}</p>
-            <span :title="message" class="footnote">{{footnote}}</span>
-            <div class="greet">
-              <p>{{updateMsg(msg)}} </p>
-              <input v-model="msg" type="text"/>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Product App</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div id="header" class="header">
+      <ul>
+        <li v-for="(listItem, index) in navs">
+          <nav-link v-bind:title="listItem.title" v-bind:navs="listItem.link"></nav-link>
+        </li>
+      </ul>
 
-              <br/><br/>
-              <div id="todaysDate"></div><br/>
-              {{now}}
-            </div>
-        </div>
+    </div>
 
-        <div id="product" class="product">
-            <div class="people">
-              <h4 class="people__title">Orders for the following:</h4>
-              <p v-for="person in persons" :key="person.id" class="people__label">{{person.name}} {{person.surname}}</p>
-            </div>
-            <!--
-                If image product is in stock - show as in stock else as out of stock.
-            -->
-            <div class="product__inner">
-              <div class="product__image">
-                <img :src="image" :alt="alt" class="product__thumbnail"/>
-              </div>
-
-              <div class="product__content">
-                <h5 class="label">{{title}}</h5>
-                <p v-if="stock" class="small">In stock</p>
-                <p v-else="stock" class="small"> Out of stock</p>
-              </div>
-            </div>
-            <ul v-bind:class="{stockList: stock}">
-              <li v-for="(item, index) in imageCollection">
-                <p @click="someFuncMethod(index)">{{item.label}}</p>
-              </li>
-            </ul>
-        </div>
-
-
-
-        <!-- development version, includes helpful console warnings -->
-        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-        <script src="index.js"></script>
-    </body>
+    <div id="discounts" class="discounts">
+      <ul>
+        <li v-for="(listItem, index) in navs">
+          <nav-link v-bind:title="listItem.title" v-bind:navs="listItem.link"></nav-link>
+        </li>
+      </ul>
+    </div>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>

@@ -1,94 +1,54 @@
 "use strict";
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    brand: 'Product',
-    product: 'shoe',
-    description: 'This product website will show you the list of available shoes.',
-    footnote: 'Shoes are great for our feet',
-    message: 'You loaded this page on ' + new Date().toLocaleString(),
-    msg: 'Type here',
-    time: new Date()
-  },
-  computed: {
-    title() {
-      return  this.brand + ' ' + this.product;
-    },
-    now() {
-      return this.time.toLocaleTimeString();
+Vue.component('nav-link', {
+  props: ['title','link'],
+  data: function() {
+    return {
+      count: 0
     }
   },
-  methods: {
-    updateMsg(val) {
-      this.msg = val
-      return this.msg
-    }
-  }
+  template: '<a href="link">{{ title }}</a>'
+
 });
 
-
-let product = new Vue({
-  el: '#product',
+let myHeader = new Vue({
+  el: '#header',
   data: {
-    persons: [
+    navs: [
       {
-        id: 1,
-        name: 'Mitso',
-        surname: 'Qalaba'
+        title:'Index',
+        link: '/'
       },
       {
-        id: 2,
-        name: 'Jacques',
-        surname: 'Coetzee'
-      }
-    ],
-    selectedIndex: 0,
-    imageCollection: [
-      {
-        path: './assets/images/shoe-two.jpg',
-        alt: 'Shoe one',
-        title: 'Heel shoe',
-        label: 'heel',
-        stock: true
+        title:'Kids',
+        link: '/kids'
       },
       {
-        path: './assets/images/shoe-one.jpeg',
-        alt: 'Shoe two',
-        title: 'Running shoes',
-        label: 'running',
-        stock: false
+        title:'Women',
+        link: '/women'
+      },
+      {
+        title:'Men',
+        link: '/men'
       }
     ]
-  },
-  methods: {
-    someFuncMethod(index) {
-      return this.selectedIndex = index;
-    }
-  },
-  computed: {
-    image() {
-     return this.imageCollection[this.selectedIndex].path
-    },
-    alt() {
-      return this.imageCollection[this.selectedIndex].alt
-    },
-    title() {
-      return this.imageCollection[this.selectedIndex].title
-    },
-    label() {
-      return this.imageCollection[this.selectedIndex].label
-    },
-    stock() {
-      return this.imageCollection[this.selectedIndex].stock
-    }
   }
 });
 
-setInterval(function() {
-  let now = new Date();
-  let str = now.toLocaleTimeString();
-  document.getElementById("todaysDate").innerHTML = str;
-}, 1000);
 
+let theDiscounts = new Vue({
+  el: '#discounts',
+  data: {
+    navs: [
+      {
+        title:'Product',
+        link: '/product'
+      },
+      {
+        title:'Categories',
+        link: '/categories'
+      }
+    ]
+  }
+});
 
