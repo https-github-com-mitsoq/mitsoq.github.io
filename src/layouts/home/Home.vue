@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header alt="Vue logo" src="./assets/logo.png"/>
     <div class="container">
       <Intro  msg="Welcome to app"/>
       <div class="container-inner">
@@ -81,20 +80,23 @@
 </template>
 
 <script>
- import Header from '../../components/Header.vue';
  import Intro from '../../components/Intro.vue';
 
   export default {
     name: 'Home',
     components: {
-      Header,
       Intro
+    },
+    methods: {
+      goBack() {
+        window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')
+      }
     }
   }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
   /* LIST */
   .std-list {
     list-style-type: none;
