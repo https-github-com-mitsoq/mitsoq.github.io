@@ -3,7 +3,6 @@
     <div id="header" class="header">
       <nav class="logo">
         <img class="logo__thumbnail" alt="Logo" src="./assets/logo.png"/>
-        {{src}}
       </nav>
       <div class="menu">
         <ul class="menu-list">

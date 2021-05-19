@@ -1,8 +1,7 @@
 <template>
-  <div>
     <div class="container">
       <Intro  msg="Welcome to app"/>
-      <div class="container-inner">
+      <div :class="{myClass: innerContentClass}" class="container-inner">
         <div class="container-inner__item">
           <h3 class="heading heading--micro">Installed CLI Plugins</h3>
           <ul class="std-list">
@@ -23,6 +22,7 @@
               </a>
             </li>
           </ul>
+          <filterMenu @click.native="selectFacet()" text="This is an filter menu prop"></filterMenu>
         </div>
 
         <div class="container-inner__item">
@@ -76,16 +76,37 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
  import Intro from '../../components/Intro.vue';
+ import FilterMenu from '../../components/FilterMenu.vue';
 
   export default {
     name: 'Home',
+    props: {
+       selectFacet: {
+            type: Function,
+            required: false,
+            default: () => {
+                return
+            }
+        }
+    },
+    data() {
+        return {
+            innerContent: true
+        }
+    },
     components: {
-      Intro
+        Intro,
+        FilterMenu
+    },
+    computed: {
+        innerContentClass() {
+            console.log(this.selectFacet());
+            return this.innerContent;
+        }
     },
     methods: {
       goBack() {

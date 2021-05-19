@@ -1,18 +1,22 @@
 <template>
   <section>
     <template>
-      <h1 class="heading heading--primary">About us</h1>
+      <intro msg="About us"/>
     </template>
   </section>
 </template>
 
 <script>
+import Intro from '../../components/Intro';
   export default {
     name: 'About',
     prop: [
       { selectedValue: Boolean },
       { selectedValue: String },
     ],
+    components: {
+        Intro,
+    },
     data() {
       return {
         name: 'Define page data here'
