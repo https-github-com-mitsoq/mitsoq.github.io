@@ -30,16 +30,3 @@ const data = {
         }
     ]
 };
-
-/*
-    <img
-    refs="img-placeholder"
-    :alt="data.alt_tag"
-    :src="filterAssetUrl(data.images[0])"
-    :title="data.title"
-    :class="{ 'lazy-video-loaded': loaded }"
-    class="lazy-video"
-    style="width: 100%; height: auto;"
-    @load="loaded = true"
-    />
-*/
