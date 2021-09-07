@@ -25,49 +25,48 @@
 </template>
 
 <script>
+    export default {
+        name: 'App'
+    }
+</script>
 
-  export default {
-    name: 'App'
-  }
-  </script>
-
-  <style>
+<style>
     .app {
-      font-family: Avenir, Helvetica, Arial, sans-serif;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      text-align: center;
-      color: #2c3e50;
-      margin-top: 60px;
+        font-family: Avenir, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #2c3e50;
+        margin-top: 60px;
     }
 
     .header {
-      align-items: center;
-      display: flex;
-      justify-content: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
     }
 
     .logo__thumbnail {
-      width: 100px;
+        width: 100px;
     }
 
     .menu-list {
-      display: block;
-      font-style: none;
-      margin: 0 auto;
+        display: block;
+        font-style: none;
+        margin: 0 auto;
     }
     .menu-list__item {
-      display: inline-block;
-      margin: 0 15px 0 0;
+        display: inline-block;
+        margin: 0 15px 0 0;
     }
 
     .cta-text {
-      color: gray;
-      text-transform: lowercase;
+        color: gray;
+        text-transform: lowercase;
     }
     .cta-text:focus,
     .cta-text:visited,
     .cta-text:hover {
-      color: gray;
+        color: gray;
     }
-  </style>
+</style>

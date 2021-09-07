@@ -1,12 +1,19 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 import App from '@/App.vue'
 
 
-import Home from '@/layouts/home/Home.vue'
-import About from '@/layouts/about/About.vue'
+import Home from '@/views/Home.vue'
+import About from '@/views/About.vue'
 
 Vue.use(VueRouter)
+
+import 'swiper/css/swiper.css'
+
+Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
+
+
 const routes = [
   {
     path:'/',

@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Intro from '../../components/Intro';
+import Intro from '../components/Intro';
   export default {
     name: 'About',
     prop: [

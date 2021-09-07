@@ -1,6 +1,10 @@
 <template>
     <div class="container">
-      <Intro  msg="Welcome to app"/>
+    <scroll-container />
+    <Intro  msg="Welcome to app"/>
+    <filterMenu @click.native="selectFacet()" text="This is an filter menu prop"></filterMenu>
+
+     <!--
       <div :class="{myClass: innerContentClass}" class="container-inner">
         <div class="container-inner__item">
           <h3 class="heading heading--micro">Installed CLI Plugins</h3>
@@ -75,12 +79,14 @@
           </ul>
         </div>
       </div>
+    !-->
     </div>
 </template>
 
 <script>
- import Intro from '../../components/Intro.vue';
- import FilterMenu from '../../components/FilterMenu.vue';
+ import Intro from '../components/Intro.vue';
+ import FilterMenu from '../components/FilterMenu.vue';
+ import scrollContainer from '../components/scrollContainer.vue';
 
   export default {
     name: 'Home',
@@ -100,11 +106,11 @@
     },
     components: {
         Intro,
-        FilterMenu
+        FilterMenu,
+        scrollContainer
     },
     computed: {
         innerContentClass() {
-            console.log(this.selectFacet());
             return this.innerContent;
         }
     },
