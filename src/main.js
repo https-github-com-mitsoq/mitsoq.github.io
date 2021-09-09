@@ -1,13 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Vuebar from 'vuebar';
 import App from '@/App.vue'
 
 import Home from '@/views/Home.vue'
 import About from '@/views/About.vue'
 
 Vue.use(VueRouter)
-Vue.use(Vuebar)
 
 const routes = [
   {
