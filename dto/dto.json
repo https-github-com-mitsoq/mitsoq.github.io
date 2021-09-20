@@ -1,0 +1,226 @@
+{
+    "two_years_monthly_amount":"R56",
+    "three_years_monthly_amount":"R41",
+    "rcs_longest_term":36,
+    "rcs_shortest_term":24,
+    "mobicred_interest_rate":20.75,
+    "rcs_interest_rate":20.5,
+    "mobicred_instalment":"R102",
+    "can_add_to_cart":true,
+    "is_single_variation":true,
+    "og_data":{
+        "og:site_name":"Superbalist",
+        "og:type":"product",
+        "og:url":"https://superbalist.dev/apartment/bed-bath/bedding/black-piping-cotton-duvet-set-white/114857",
+        "og:title":"Black piping cotton duvet set - white",
+        "og:description":"Update your space in luxurious style with this lovely duvet set. With a soft cotton construction and classic piping trim, it will ensure you get your beauty rest every night.",
+        "og:image":"https://assets.superbalistcdn.co.za/filters:quality(75):format(jpg)/471505/original.jpg",
+        "og:price:amount":"949.00",
+        "og:price:currency":"ZAR",
+        "og:brand":"Sixth Floor",
+        "product:brand":"Sixth Floor",
+        "product:product_link":"https://superbalist.dev/apartment/bed-bath/bedding/black-piping-cotton-duvet-set-white/114857",
+        "product:category":"Apartment - Bedding",
+        "twitter:card":"summary_large_image",
+        "twitter:site":"@superbalist",
+        "twitter:creator":"@superbalist"
+    },
+    "product":{
+        "artwork_id":null,
+        "artwork_media_id":null,
+        "asset":{
+           "base_ssl_url":"https://assets.superbalistcdn.co.za/{size}filters:quality({quality}):format({extension})/471505/original.jpg",
+           "extension":"jpg",
+           "height":1150,
+           "id":471505,
+           "width":798
+        },
+        "asset_id":471505,
+        "assets":[
+            {
+                "base_ssl_url":"https://assets.superbalistcdn.co.za/{size}filters:quality({quality}):format({extension})/471505/original.jpg",
+                "extension":"jpg",
+                "height":1150,
+                "id":471505,
+                "width":798
+            },
+            {
+                "base_ssl_url":"https://assets.superbalistcdn.co.za/{size}filters:quality({quality}):format({extension})/471508/original.jpg",
+                "extension":"jpg",
+                "height":1150,
+                "id":471508,
+                "width":798
+            }
+        ],
+        "average_price":"949.00",
+        "badges":[],
+        "category_ids":[
+            {
+                "160":[
+                    273,
+                    276
+                ]
+            }
+        ],
+        "category_string":"Apartment - Bedding",
+        "classification":"NEW",
+        "created_at":1474452928,
+        "data":{
+            "Colour":"White with black piping",
+            "Care":"30 Degree Machine Wash",
+            "Includes":"Duvet Cover, 2 x Standard Pillowcases",
+            "Material":"100% Cotton"
+        },
+        "data_nice":{
+            "Colour":"White with black piping",
+            "Care":"30 Degree Machine Wash",
+            "Includes":"Duvet Cover, 2 x Standard Pillowcases",
+            "Material":"100% Cotton"
+        },
+        "description":"<p>Update your space in luxurious style with this lovely duvet set. With a soft cotton construction and classic piping trim, it will ensure you get your beauty rest every night.</p>",
+        "designer_id":11919,
+        "designer_name":"Sixth Floor",
+        "designer_path":"/brands/sixth-floor",
+        "filter_bucket_ids":[
+            2841,
+            2844
+        ],
+        "id":114857,
+        "indicators":[],
+        "intention":"",
+        "is_available_to_purchase":true,
+        "is_draft":false,
+        "is_eligible_for_free_shipping":true,
+        "is_free_shipping":false,
+        "is_in_fragrances":false,
+        "is_in_games_and_puzzles":false,
+        "is_made_to_order":false,
+        "is_on_sale": false,
+        "is_permanent":true,
+        "is_terminal_stock_sale_item":false,
+        "is_visible":true,
+        "markdown_restriction":0,
+        "model_display_name":null,
+        "model_id":null,
+        "modified_at":1560428544,
+        "name":"Black piping cotton duvet set - white",
+        "path":"/apartment/bed-bath/bedding/black-piping-cotton-duvet-set-white/114857",
+        "percentage_reduced": "35",
+        "price_range":{
+            "min":{
+                "price":"799.00",
+                "retail_price":"799.00",
+                "discount":"0.00",
+                "has_discount":false
+            },
+            "max":{
+                "price":"1099.00",
+                "retail_price":"1099.00",
+                "discount":"0.00"
+            },
+            "has_discount":false
+        },
+        "redirect_to":null,
+        "requires_shipping":true,
+        "return_policy_id":11,
+        "return_policy_name":"30 Day exchange or return",
+        "return_policy_policy":"Free exchange or return within 30 days",
+        "ribbons":[],
+        "shipping_policy_id":17,
+        "shipping_policy_max_days":4,
+        "shipping_policy_min_days":2,
+        "shipping_policy_name":"2 - 4 days",
+        "shipping_policy_policy":"2 to 4 working days",
+        "short_name":"Black piping cotton duvet set",
+        "size_template_id":9,
+        "size_template_mapping_id":null,
+        "slug":"black-piping-cotton-duvet-set-white",
+        "status":"AVAILABLE",
+        "style_code_id":null,
+        "suspended_at":null,
+        "tags":[
+            "apartment",
+            "apartment-bedding-bath",
+            "apartment-bedding-bath-bedding",
+            "brand-sixth-floor",
+            "material-cotton"
+        ],
+        "text_description":"Update your space in luxurious style with this lovely duvet set. With a soft cotton construction and classic piping trim, it will ensure you get your beauty rest every night.",
+        "top_level_category":{
+            "path":"/browse/apartment/bed-bath/bedding",
+            "name":"Bedding"
+        },
+        "type":"STOCK",
+        "variation_colour_hex":null,
+        "variation_colour_name":null,
+        "variations_label":"",
+        "visibility":"OPEN",
+        "will_i_get_it_before_xmas":false,
+        "will_i_get_it_before_xmas_campaign_ended":true
+    },
+    "page_impression":{
+        "type":"product",
+        "metadata":{
+            "id":114857,
+            "variations":{}
+        }
+    },
+    "size_guide":"<h3>Bedding Sizes /&nbsp;<span class=\"gray\">Conversion &amp; Measurement Chart</span></h3>\n<p>All bedding is illustrated below using standard bed sizes for&nbsp;reference and scale. A standard king size bed measuring 183 cm x 203 cm, a queen size bed measuring 153 cm x 203 cm, and a double size bed measuring 133 cm x 188 cm. &nbsp;</p>\n<p><strong>NOTE:</strong>&nbsp;<em class=\"gray\">All dimensions are shown in centimeters.&nbsp;</em></p>\n<p><em class=\"gray\"><img src=\"https://ssl.a.sprbl.st/190x213/filters:quality(75):format(png)/cms/BeddingSizes_01_aKTpHPp.png\" alt=\"Size Guide King Size Bed Illustration\" width=\"190\" height=\"213\" />&nbsp;<img src=\"https://ssl.a.sprbl.st/190x213/filters:quality(75):format(png)/cms/BeddingSizes_02.png\" alt=\"Size Guide Queen Size Bed Illustration\" width=\"190\" height=\"213\" />&nbsp;<img src=\"https://ssl.a.sprbl.st/190x213/filters:quality(75):format(png)/cms/BeddingSizes_03.png\" alt=\"Size Guide Double Size Bed Illustration\" width=\"190\" height=\"213\" /></em></p>",
+    "variations":{
+        "1721660":{
+            "price":"1199.00",
+            "reduced_price":"779.00",
+            "reduced_percentage":"35",
+            "quantity":2,
+            "is_draft":false,
+            "status":"AVAILABLE",
+            "fields":{
+                "Size":"UK 7"
+            },
+            "stock_quantity_text":"Only %s left – don't miss out."
+        },
+        "1721661":{
+            "price":"1199.00",
+            "reduced_price":"779.00",
+            "reduced_percentage":"35",
+            "quantity":3,
+            "is_draft":false,
+            "status":"AVAILABLE",
+            "fields":{
+                "Size":"UK 8"
+            },
+            "stock_quantity_text":"Only %s left – don't miss out."
+        },
+        "1721662":{
+            "price":"1199.00",
+            "reduced_price":"779.00",
+            "reduced_percentage":"35",
+            "quantity":0,
+            "is_draft":false,
+            "status":"SOLD OUT",
+            "fields":{
+                "Size":"UK 9"
+            },
+            "stock_quantity_text":""
+        }
+    },
+    "breadcrumbs":[
+        {
+            "title":"Apartment",
+            "url":"/apartment"
+        },
+        {
+            "title":"Bed & Bath",
+            "url":"/browse/apartment/bed-bath"
+        },
+        {
+            "title":"Bedding",
+            "url":"/browse/apartment/bed-bath/bedding"
+        },
+        {
+            "title":"Black piping cotton duvet set - white"
+        }
+    ],
+    "cousins":[],
+    "suspended":false
+}
