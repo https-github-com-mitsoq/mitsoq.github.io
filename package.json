@@ -5,10 +5,13 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "app": "node server.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "core-js": "^3.6.5",
+    "express": "^4.17.1",
     "portal-vue": "2.1.7",
     "vue": "^2.6.11",
     "vue-router": "^3.5.1",
