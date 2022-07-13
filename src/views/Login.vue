@@ -26,7 +26,7 @@
             @expired="onCaptchaExpired"
             size="visible"
             text-align="left"
-            sitekey="6Lcf3-ogAAAAADMbf9wQmLN9MJI0n22Z_0N7LSS3"
+            sitekey="6LdT8usgAAAAABQun-G6QYcIRU9A-3_iT0jLfdh_"
         ></vue-recaptcha>
         <input :disabled="status==='submitting'" type="submit" value="Submit" />
     </form>
