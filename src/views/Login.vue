@@ -26,9 +26,9 @@
             @expired="onCaptchaExpired"
             size="visible"
             text-align="left"
-            sitekey="6LdT8usgAAAAABQun-G6QYcIRU9A-3_iT0jLfdh_"
+            sitekey="6LdKA-wgAAAAAIMGFVPr0EPqGAxRZy22v20Emvym"
         ></vue-recaptcha>
-        <input :disabled="status==='submitting'" type="submit" value="Submit" />
+        <input type="submit" value="Submit" />
     </form>
 
   </section>
@@ -45,13 +45,34 @@
                 full_name: '',
                 recaptchaToken: '',
                 recaptchaSuccessful: false,
+                recaptchaVerify: '',
                 serverError: '',
-                status: ''
+                status: '',
+
             }
         },
+        mounted () {
+            console.log('Test', this.recaptchaVerify)
+        },
         methods: {
-            loginSubmission () {
-                this.$refs.recaptcha.execute();
+            loginSubmission (recaptchaToken) {
+                if (this.status !== 'ok') return
+                //this.$refs.recaptcha.execute();
+                axios.post('http://localhost:3000/logins', {
+                    name: this.full_name,
+                    recaptchaToken: recaptchaToken
+                }, {
+                    headers: {
+                        'content-type': 'application/json'
+                    }
+                }
+                ).then(res => {
+                    this.recaptchaSuccessful = res.body.message
+                    console.log('AXIOS', this.recaptchaSuccessful)
+                }).catch(err => {
+                    self.serverError = this.getErrorMessage(err);
+                    console.log('ERROR', err)
+                })
             },
             getErrorMessage (err) {
                 let responseBody;
@@ -62,30 +83,13 @@
                     responseBody = err.response.data || responseBody;
                 return responseBody.message || JSON.stringify(responseBody);
             },
-            onCaptchaVerified () {
-                const self = this
-                self.status = "submitting"
-                self.$refs.recaptcha.reset()
-                axios.post('http://localhost:3000/logins', {
-                    name: self.full_name,
-                    recaptchaToken: self.recaptchaToken
-                }, {
-                    headers: {
-                        'content-type': 'application/json'
-                    }
-                }
-                ).then(res => {
-                    this.recaptchaSuccessful = res.body.message
-                    console.log('AXIOS', res.body)
-                }).catch(err => {
-                    self.serverError = this.getErrorMessage(err);
-                    console.log('ERROR', err)
-                }).then(() => {
-                    self.status = ""
-                })
+            onCaptchaVerified (response) {
+               this.status = 'ok'
+               this.recaptchaVerify = response
+               console.log(response)
+                //self.$refs.recaptcha.reset()
             },
             onCaptchaExpired: function () {
-
                 this.$refs.recaptcha.reset();
             }
         }
