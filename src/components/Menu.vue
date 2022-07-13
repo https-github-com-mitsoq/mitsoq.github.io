@@ -9,13 +9,10 @@
                     <router-link to="/" class="cta-text">Home</router-link>
                 </li>
                 <li class="menu-list__item">
-                    <router-link to="/profiles" class="cta-text">Profiles</router-link>
+                    <router-link to="/login" class="cta-text">Login</router-link>
                 </li>
                 <li class="menu-list__item">
                     <router-link to="/about" class="cta-text">About</router-link>
-                </li>
-                <li class="menu-list__item">
-                    <a class="cta-text" href="https://cli.vuejs.org" target="_blank" rel="noopener">Vue guide</a>
                 </li>
             </ul>
         </div>
@@ -23,7 +20,6 @@
 </template>
 
 <script>
-
     export default {
         name: 'Menu',
         props: {

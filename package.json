@@ -11,8 +11,11 @@
   "dependencies": {
     "axios": "^0.24.0",
     "core-js": "^3.6.5",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "fs": "^0.0.1-security",
     "portal-vue": "2.1.7",
+    "url": "^0.11.0",
     "vue": "^2.6.11",
     "vue-router": "^3.5.1",
     "vuescroll": "^4.17.3",
