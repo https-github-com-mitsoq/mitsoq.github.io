@@ -114,6 +114,6 @@ export default {
   }
 }
 .white {
-  color: #fff;
+  color: #f0f0f0;
 }
 </style>
