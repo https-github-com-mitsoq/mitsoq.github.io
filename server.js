@@ -1,41 +1,18 @@
-const express = require('express'),
-    fs = require('fs'),
-    url = require('url'),
-    cors = require('cors')
+const express = require('express')
+const path = require('path')
 
 const app = express()
-
-const corsOptions = {
-	origin: 'http://localhost:8080',
-	optionsSuccessStatus: 200
-}
-app.use(cors(corsOptions))
+const port = 9080
 
 app.use(express.json());
 app.use(express.urlencoded({
   extended: true
 }))
 
-const port = 3000
-const logins = []
+app.use('/', express.static(path.join(__dirname, 'dist')))
 
-
-
-app.use('/public', express.static(__dirname + '/public'));
-app.use(express.static(__dirname + '/public'))
-
-app.post('/logins', (req, res) => {
-    const saveFile = __dirname + '/public/data/logins.json'
-    logins.push(req.body)
-    fs.writeFile(saveFile, JSON.stringify(logins), (err) => {
-        if (err) return console.log('There was an issue with the write:', err)
-        console.log('DATA', logins)
-    })
-
-})
-
-app.get('/users', (req, res) => {
-    res.send('Hello users')
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'))
 })
 
 app.listen(port, () => {

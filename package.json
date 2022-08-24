@@ -3,34 +3,41 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "app": "node server.js",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "serve": "vue-cli-service serve",
+
+    "build-storybook": "build-storybook",
+    "preview-storybook": "serve storybook-static",
+    "storybook": "start-storybook -p 6006",
+
+    "app": "node server.js  localhost 9000"
   },
   "dependencies": {
-    "axios": "^0.24.0",
-    "core-js": "^3.6.5",
-    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "fs": "^0.0.1-security",
-    "portal-vue": "2.1.7",
-    "url": "^0.11.0",
-    "vue": "^2.6.11",
-    "vue-recaptcha": "1.3.0",
-    "vue-router": "^3.5.1",
-    "vuescroll": "^4.17.3",
-    "vuex": "3.1.3",
-    "xstate": "^4.19.1"
+    "path": "^0.12.7",
+    "vite": "^3.0.8",
+    "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-vite": "^0.2.2",
+    "@storybook/testing-library": "0.0.13",
+    "@storybook/vue3": "^6.5.10",
+    "@vitejs/plugin-vue": "^3.0.3",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.5",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "sass": "^1.54.4",
+    "vue-loader": "^16.8.3"
   },
   "eslintConfig": {
     "root": true,

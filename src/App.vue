@@ -1,17 +1,15 @@
 <template>
   <div class="wrapper">
-    <Menu></Menu>
-    <!--Body of dynamic page -->
-    <router-view></router-view>
+    <home></home>
   </div>
 </template>
 
 <script>
-    import Menu from './components/Menu.vue'
+import Home from './views/Home.vue'
     export default {
         name: 'App',
         components: {
-            Menu
+            Home
         }
     }
 </script>
