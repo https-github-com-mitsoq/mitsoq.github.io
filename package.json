@@ -6,12 +6,11 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "serve": "vue-cli-service serve",
-
     "build-storybook": "build-storybook",
     "preview-storybook": "serve storybook-static",
     "storybook": "start-storybook -p 6006",
-
-    "app": "node server.js  localhost 9000"
+    "app": "node server.js  localhost 9000",
+    "chromatic": "npx chromatic --project-token=2a72ba4f1cdf"
   },
   "dependencies": {
     "express": "^4.17.1",
@@ -34,6 +33,7 @@
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.5",
+    "chromatic": "^6.7.4",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "sass": "^1.54.4",
@@ -57,5 +57,7 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "readme": "ERROR: No README data found!",
+  "_id": "vue-tut@0.1.0"
 }

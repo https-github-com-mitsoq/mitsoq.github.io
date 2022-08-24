@@ -94,19 +94,18 @@ export default {
   border: 0;
   border-radius: 2px;
   max-width: 100%;
-  padding: 10px 15px;
+  padding: 10px;
   margin: 0 0 10px;
   text-transform: uppercase;
   outline: none;
   transition: all ease-in-out 0.2s;
   cursor: pointer;
-
   @include modifier('red') {
-    background: red;
+    background: #cc0303;
   }
 
   @include modifier('black') {
-    background: #000;
+    background: #000000;
   }
 
   &:hover,
