@@ -87,7 +87,7 @@ export default {
   align-items: center;
   flex: 1;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   height: 40px;
   width: 300px;
   color: #000;
