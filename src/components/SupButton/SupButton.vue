@@ -87,7 +87,7 @@ export default {
   align-items: center;
   flex: 1;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   height: 40px;
   width: 300px;
   color: #000;
@@ -114,6 +114,6 @@ export default {
   }
 }
 .white {
-  color: #fff;
+  color: #f0f0f0;
 }
 </style>
